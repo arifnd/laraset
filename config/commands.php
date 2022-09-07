@@ -26,7 +26,7 @@ return [
     |
     */
 
-    'paths' => [app_path('Commands')],
+    'paths' => [],
 
     /*
     |--------------------------------------------------------------------------
@@ -40,7 +40,7 @@ return [
     */
 
     'add' => [
-        // ..
+        App\Commands\DeployerCommand::class,
     ],
 
     /*
