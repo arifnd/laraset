@@ -25,6 +25,11 @@ class ComposerService
             array_splice(self::$command, 1, 1, ['global', 'require']);
         }
 
+        self::run();
+    }
+
+    public static function run()
+    {
         $process = new Process(self::$command);
         $process->run();
 
