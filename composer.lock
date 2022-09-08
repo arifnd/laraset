@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4acd6a1f2ce885ef1306882f4a5c9c44",
+    "content-hash": "eb23692a765c598ff289629c8fadcfcc",
     "packages": [
         {
             "name": "laminas/laminas-servicemanager",
@@ -5902,6 +5902,60 @@
             "time": "2021-07-28T10:34:58+00:00"
         },
         {
+            "name": "timwassenburg/laravel-service-generator",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/timwassenburg/laravel-service-generator.git",
+                "reference": "b141d22aba59fd06974b60a8f6f5b34fc9dcd01c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/timwassenburg/laravel-service-generator/zipball/b141d22aba59fd06974b60a8f6f5b34fc9dcd01c",
+                "reference": "b141d22aba59fd06974b60a8f6f5b34fc9dcd01c",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "TimWassenburg\\ServiceGenerator\\Http\\Providers\\CommandServiceProvider",
+                        "TimWassenburg\\ServiceGenerator\\ServiceGeneratorServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TimWassenburg\\ServiceGenerator\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tim Wassenburg"
+                }
+            ],
+            "description": "Generate Laravel services",
+            "homepage": "https://github.com/timwassenburg/laravel-service-generator",
+            "keywords": [
+                "artisan",
+                "cli",
+                "generator",
+                "laravel",
+                "pattern",
+                "php",
+                "services"
+            ],
+            "support": {
+                "issues": "https://github.com/timwassenburg/laravel-service-generator/issues",
+                "source": "https://github.com/timwassenburg/laravel-service-generator/tree/v1.0.2"
+            },
+            "time": "2022-03-21T18:29:00+00:00"
+        },
+        {
             "name": "vlucas/phpdotenv",
             "version": "v5.4.1",
             "source": {
@@ -6123,5 +6177,5 @@
         "php": "^8.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.3.0"
 }
