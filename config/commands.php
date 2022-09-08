@@ -63,6 +63,7 @@ return [
         Illuminate\Console\Scheduling\ScheduleFinishCommand::class,
         Illuminate\Foundation\Console\VendorPublishCommand::class,
         LaravelZero\Framework\Commands\StubPublishCommand::class,
+        TimWassenburg\ServiceGenerator\Console\MakeService::class,
     ],
 
     /*
