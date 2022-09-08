@@ -41,6 +41,7 @@ return [
 
     'add' => [
         App\Commands\DeployerCommand::class,
+        App\Commands\NewCommand::class,
     ],
 
     /*
