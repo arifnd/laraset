@@ -13,6 +13,18 @@ class ComposerService
         'composer',
     ];
 
+    public static function createProject($package, $name)
+    {
+        array_push(self::$command, 'create-project', $package, $name);
+
+        self::run();
+    }
+
+    public static function createLaravelProject($name)
+    {
+        self::createProject('laravel/laravel', $name);
+    }
+
     public static function require($package, $dev = false, $global = false)
     {
         array_push(self::$command, 'require', $package);
