@@ -21,7 +21,6 @@ You can also install it globally
 composer global require arifnd/laraset
 ```
 
-
 ## Usage
 
 Inside Laravel project
@@ -35,6 +34,10 @@ When install it globally
 ```bash
 laraset
 ```
+
+## Supported Packages
+
+- [Deployer](https://github.com/deployphp/deployer)
 
 ## License
 Laraset is an open-source software licensed under the MIT license.
