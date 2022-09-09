@@ -12,7 +12,15 @@ class DeployerCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'deployer {--g|global}';
+    protected $signature = 'deployer
+                            {--g|global : Install it globally}';
+
+    /**
+     * The description of the command.
+     *
+     * @var string
+     */
+    protected $description = 'Install PHP Deployer';
 
     /**
      * Execute the console command.
