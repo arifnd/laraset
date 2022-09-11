@@ -42,6 +42,7 @@ return [
     'add' => [
         App\Commands\DeployerCommand::class,
         App\Commands\DiDOMCommand::class,
+        App\Commands\DomPDFCommand::class,
         App\Commands\NewCommand::class,
     ],
 
