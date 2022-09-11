@@ -38,6 +38,8 @@ laraset
 ## Supported Packages
 
 - [Deployer](https://github.com/deployphp/deployer)
+- [DiDOM](https://github.com/Imangazaliev/DiDOM)
+- [Laravel DomPDF](https://github.com/barryvdh/laravel-dompdf)
 
 ## License
 Laraset is an open-source software licensed under the MIT license.
