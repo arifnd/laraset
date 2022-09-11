@@ -13,6 +13,16 @@
 
 uses(Tests\TestCase::class)->in('Feature');
 
+uses()
+    ->beforeAll(function () {
+        copy('composer.json', 'composer.json.bak');
+    })
+    ->afterAll(function () {
+        copy('composer.json.bak', 'composer.json');
+        unlink('composer.json.bak');
+    })
+    ->in('Feature');
+
 /*
 |--------------------------------------------------------------------------
 | Expectations
