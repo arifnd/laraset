@@ -2,8 +2,6 @@
 
 namespace App\Services;
 
-use Symfony\Component\Process\Process;
-
 /**
  * Class ComposerService.
  */
@@ -13,11 +11,16 @@ class ComposerService
         'composer',
     ];
 
+    public function __construct(ProcessService $process)
+    {
+        $this->process = $process;
+    }
+
     public function createProject($package, $name)
     {
         array_push($this->command, 'create-project', $package, $name);
 
-        $this->run();
+        $this->process->run($this->command);
     }
 
     public function createLaravelProject($name)
@@ -37,18 +40,6 @@ class ComposerService
             array_splice($this->command, 1, 1, ['global', 'require']);
         }
 
-        $this->run();
-    }
-
-    public function run()
-    {
-        $process = new Process($this->command);
-        $process->run();
-
-        if (! $process->isSuccessful()) {
-            return false;
-        }
-
-        return true;
+        $this->process->run($this->command);
     }
 }
