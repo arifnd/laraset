@@ -16,10 +16,13 @@ uses(Tests\TestCase::class)->in('Feature');
 uses()
     ->beforeAll(function () {
         copy('composer.json', 'composer.json.bak');
+        copy('composer.lock', 'composer.lock.bak');
     })
     ->afterAll(function () {
         copy('composer.json.bak', 'composer.json');
         unlink('composer.json.bak');
+        copy('composer.lock.bak', 'composer.lock');
+        unlink('composer.lock.bak');
     })
     ->in('Feature');
 
