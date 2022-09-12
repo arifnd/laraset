@@ -45,6 +45,7 @@ return [
         App\Commands\DiDOMCommand::class,
         App\Commands\DomPDFCommand::class,
         App\Commands\NewCommand::class,
+        App\Commands\PintCommand::class,
     ],
 
     /*
