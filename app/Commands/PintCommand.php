@@ -30,7 +30,7 @@ class PintCommand extends Command
     {
         $this->composer = $composer;
 
-        $this->task('Installing DiDOM', function () {
+        $this->task('Installing Laravel Pint', function () {
             $this->composer->require('laravel/pint', true);
         });
     }

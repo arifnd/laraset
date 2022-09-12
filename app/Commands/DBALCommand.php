@@ -30,7 +30,7 @@ class DBALCommand extends Command
     {
         $this->composer = $composer;
 
-        $this->task('Installing DiDOM', function () {
+        $this->task('Installing Doctrine DBAL', function () {
             $this->composer->require('doctrine/dbal');
         });
     }
