@@ -12,7 +12,7 @@ class NewCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'new {name}';
+    protected $signature = 'new {name : Project name}';
 
     /**
      * The description of the command.
