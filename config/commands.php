@@ -40,6 +40,7 @@ return [
     */
 
     'add' => [
+        App\Commands\DBALCommand::class,
         App\Commands\DeployerCommand::class,
         App\Commands\DiDOMCommand::class,
         App\Commands\DomPDFCommand::class,
