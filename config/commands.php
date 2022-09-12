@@ -46,6 +46,7 @@ return [
         App\Commands\DomPDFCommand::class,
         App\Commands\NewCommand::class,
         App\Commands\PintCommand::class,
+        App\Commands\ServiceGeneratorCommand::class,
     ],
 
     /*
